@@ -1,12 +1,15 @@
-import "./App.css";
+import React, { Component } from "react";
 import Carousel from "./components/Carousel";
-import React from "react";
+// import "./App.css";
+import ImageData from "./data/CarouselData";
+
+
 function App() {
   return (
     <div className="App">
-      <Carousel />
-    </div>
-  );
+        <Carousel ImgData={ImageData} />
+      </div>
+  )
 }
 
-export default App;
+export default App
